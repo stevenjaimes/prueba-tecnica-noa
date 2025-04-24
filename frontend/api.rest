@@ -1,0 +1,53 @@
+GET http://localhost:1337/api/home?populate=cover
+Authorization: Bearer fabc72ad1b4bcd6e072c57f8c8f7d552f1d4881c4aa069e4b0c98ebaa0924e720308655c1bb452f23680316498a71f97809e21ce45f3af3d7279591b64231bb8af20cbe0f51602b72ed4804c8e90d799d6d690058d1358b7395fa2151d297aee63afb003d82f789acafdb8f480a8a90884f09d3aea519cf4281ba5c15367728e
+
+
+###
+
+GET http://localhost:1337/api/product-categories?fields[0]=name&fields[1]=slug&fields[2]=description&populate[image][fields][0]=url
+Authorization: Bearer fabc72ad1b4bcd6e072c57f8c8f7d552f1d4881c4aa069e4b0c98ebaa0924e720308655c1bb452f23680316498a71f97809e21ce45f3af3d7279591b64231bb8af20cbe0f51602b72ed4804c8e90d799d6d690058d1358b7395fa2151d297aee63afb003d82f789acafdb8f480a8a90884f09d3aea519cf4281ba5c15367728e
+
+
+###
+
+GET http://localhost:1337/api//i624w1z0798z2kdosdg49odr?populate[images][fields][0]=url&populate[stock_por_talla]=*
+Authorization: Bearer fabc72ad1b4bcd6e072c57f8c8f7d552f1d4881c4aa069e4b0c98ebaa0924e720308655c1bb452f23680316498a71f97809e21ce45f3af3d7279591b64231bb8af20cbe0f51602b72ed4804c8e90d799d6d690058d1358b7395fa2151d297aee63afb003d82f789acafdb8f480a8a90884f09d3aea519cf4281ba5c15367728e
+
+
+###
+GET https://strapi-app-dsgi.onrender.com/api/products?filters[color][$eq]=Azul
+Authorization: Bearer fabc72ad1b4bcd6e072c57f8c8f7d552f1d4881c4aa069e4b0c98ebaa0924e720308655c1bb452f23680316498a71f97809e21ce45f3af3d7279591b64231bb8af20cbe0f51602b72ed4804c8e90d799d6d690058d1358b7395fa2151d297aee63afb003d82f789acafdb8f480a8a90884f09d3aea519cf4281ba5c15367728e
+
+
+
+###
+
+GET http://localhost:1337/api/product-categories?populate[image][fields][0]=url&populate=products
+Authorization: Bearer fabc72ad1b4bcd6e072c57f8c8f7d552f1d4881c4aa069e4b0c98ebaa0924e720308655c1bb452f23680316498a71f97809e21ce45f3af3d7279591b64231bb8af20cbe0f51602b72ed4804c8e90d799d6d690058d1358b7395fa2151d297aee63afb003d82f789acafdb8f480a8a90884f09d3aea519cf4281ba5c15367728e
+
+
+###
+
+GET http://localhost:1337/api/perfume
+Authorization: Bearer fabc72ad1b4bcd6e072c57f8c8f7d552f1d4881c4aa069e4b0c98ebaa0924e720308655c1bb452f23680316498a71f97809e21ce45f3af3d7279591b64231bb8af20cbe0f51602b72ed4804c8e90d799d6d690058d1358b7395fa2151d297aee63afb003d82f789acafdb8f480a8a90884f09d3aea519cf4281ba5c15367728e
+
+
+###
+
+GET http://localhost:1337/api/perfumes?populate[imageUrl][fields][0]=url&populate[categories][fields][0]=name&populate[fragancia][populate][0]=notasfinal
+Authorization: Bearer fabc72ad1b4bcd6e072c57f8c8f7d552f1d4881c4aa069e4b0c98ebaa0924e720308655c1bb452f23680316498a71f97809e21ce45f3af3d7279591b64231bb8af20cbe0f51602b72ed4804c8e90d799d6d690058d1358b7395fa2151d297aee63afb003d82f789acafdb8f480a8a90884f09d3aea519cf4281ba5c15367728e
+ 
+ 
+###
+
+GET http://localhost:1337/api/products/i624w1z0798z2kdosdg49odr?populate[imagenes][fields][0]=url&populate[stock_por_talla]=*&populatec57f8c8f7d552f1d4881c4aa069e4b0c98ebaa0924e720308655c1bb452f23680316498a71f97809e21ce45f3af3d7279591b64231bb8af20cbe0f51602b72ed4804c8e90d799d6d690058d1358b7395fa2151d297aee63afb003d82f789acafdb8f480a8a90884f09d3aea519cf4281ba5c15367728e
+###
+
+GET http://localhost:1337/api/products?fields[0]=nombre&fields[1]=slug&fields[2]=descripcion&fields[3]=precio&fields[4]=estaActivo&fields[5]=enOferta&fields[6]=precioDescuento&fields[7]=color&fields[8]=genero&fields[9]=destacado&populate[imagenes][fields][0]=url&populate[stock_por_talla]=*&populate[product_category][fields]=*&pagination%5Bpage%5D=1&pagination%5BpageSize%5D=10&filters%5Bcolor%5D%5B%24eq%5D=Azul
+Authorization: Bearer fabc72ad1b4bcd6e072c57f8c8f7d552f1d4881c4aa069e4b0c98ebaa0924e720308655c1bb452f23680316498a71f97809e21ce45f3af3d7279591b64231bb8af20cbe0f51602b72ed4804c8e90d799d6d690058d1358b7395fa2151d297aee63afb003d82f789acafdb8f480a8a90884f09d3aea519cf4281ba5c15367728e
+
+###
+GET http://localhost:1337/api/users/me
+Authorization: Bearer cf96ddd78f2abaa64d1100ed591caf7ed588e62cc134b377dba98bdfec5b4a19f9851b8a46e72dcfd091b1a27af787d8dcc8c0f4a7442c6d99c32b3bd52ca505e0833a0a63ac183b1295bf93b6b45d7bd6ea9daa0dd047268cd351fab0e9ccea9cd33d8df7b9ba75be43166bf077e7f36f921213514c408666307ec3e3caef32
+Accept: application/json
+X-Strapi-Version: 5

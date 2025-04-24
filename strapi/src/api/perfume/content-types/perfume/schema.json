@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "perfumes",
+  "info": {
+    "singularName": "perfume",
+    "pluralName": "perfumes",
+    "displayName": "perfume",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "brand": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks",
+      "required": true
+    },
+    "imageUrl": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "size": {
+      "type": "string",
+      "required": true
+    },
+    "inStock": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "featured": {
+      "type": "boolean",
+      "default": true,
+      "required": false
+    },
+    "fragancia": {
+      "type": "component",
+      "repeatable": true,
+      "component": "notes.note"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category",
+      "mappedBy": "perfume"
+    }
+  }
+}

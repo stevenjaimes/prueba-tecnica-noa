@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_notes_notasfragancias",
+  "info": {
+    "displayName": "notasfragancia"
+  },
+  "options": {},
+  "attributes": {
+    "notasFinal": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_notes_notes",
+  "info": {
+    "displayName": "Note",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "topNotes",
+        "middleNotes",
+        "baseNotes"
+      ]
+    },
+    "notasfinal": {
+      "displayName": "notasfragancia",
+      "type": "component",
+      "repeatable": true,
+      "component": "notes.notasfragancia"
+    }
+  }
+}
